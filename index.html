@@ -1,0 +1,282 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Curso de CSS</title>
+
+    <!--link rel="stylesheet" href="css/reset.css"-->
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/style.css">
+
+    <style>
+        html {
+            scroll-behavior: smooth;
+        }
+
+        h1 {
+            color: yellowgreen;
+        }
+    </style>
+
+</head>
+
+<body>
+    <article id="temario-css">
+        <h1 style="color: lightskyblue;">Practicando con CSS</h1>
+        <p><i style="font-weight: bold; color: red;">Cascading Style Sheets</i> - Hojas de Estilo en Cascada</p>
+
+        <h2 id="temario-css">Temario del Curso</h2>
+        <ul>
+            <li><a href="index.html#selectores-basicos">Selectores Básicos</a> </li>
+            <li><a href="index.html#selectores-avanzados">Selectores Avanzados</a></li>
+            <li><a href="index.html#selectores-de-hermanos">Selectores de Hermanos</a></li>
+            <li><a href="index.html#selectores-de-atributos">Selectores de Atributos</a></li>
+            <li><a href="index.html#selector-universal">Selector Universal</a></li>
+            <li><a href="index.html#pseudoclases">Pseudoclases</a></li>
+            <li><a href="index.html#pseudoelementos">Pseudoelementos</a></li>
+            <li><a href="index.html#agrupar-selectores">Agrupar Selectores</a></li>
+            <li><a href="index.html#algoritmo-css">Algoritmo CSS</a></li>
+            <li><a href="index.html#reset-normalize">Reset / Normalize</a></li>
+            <li><a href="index.html#prefijos">Prefijos de los Navegadores</a></li>
+            <li><a href="box-model.html">El Modelo de Caja</a></li>
+            <li><a href="positions.html">Posicionamiento en CSS</a></li>
+            <li><a href="positions-examples.html">Ejercicios de Posicionamiento CSS</a></li>
+            <li><a href="colors.html">Colores en CSS</a></li>
+            <li><a href="unit.html">Unidades de Medida en CSS</a></li>
+            <li><a href="variables-functions.html">Variables y Funciones</a></li>
+            <li><a href="fonts-texts.html">Estilos de Fuentes y Textos</a></li>
+            <li><a href="border-outline.html">Borders u Outlines</a></li>
+            <li><a href="backgrounds.html">Fondos en CSS</a></li>
+            <li><a href="images.html">Imagenes en CSS</a></li>
+            <li><a href="lists.html">Listas en CSS</a></li>
+            <li><a href="tables.html">Tablas en CSS</a></li>
+            <li><a href="forms.html">Formularios en CSS</a></li>
+            <li><a href="visual-efects.html">Efectos Visuales en CSS</a></li>
+            <li><a href="scroll-one-page.html">Efectos con Scroll (<small>Sitio One Page</small>)</a></li>
+            <li><a href="scroll-snap-slides.html">Ajuste del Scroll (<small>Slides</small>)</a></li>
+            <li><a href="motion.html">Movimiento en CSS</a></li>
+        </ul>
+    </article>
+
+    <hr>
+    <article id="selectores-basicos">
+        <h2>Selectores Básicos</h2>
+
+        <p>
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quam soluta esse commodi odio tempora asperiores
+            dolorem facere error repellat recusandae maxime a, corrupti, velit facilis quae sapiente non ad? Fuga!
+        </p>
+        <p id="parrafo-dos">
+            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ad, iste rem corporis consequatur
+            et ullam omnis
+            sed maxime nobis similique deserunt exercitationem provident voluptas eos rerum. Eum amet deserunt minus?
+        </p>
+        <p class="text-32 bg-skyblue">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Harum mollitia non pariatur laborum
+            atque asperiores, eum fugiat consectetur? Velit impedit illum culpa dignissimos dolorem nobis ipsum
+            accusantium cum quam quis!
+        </p>
+        <p class="text-20 bg-steelblue text-white">
+            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nemo delectus cupiditate laboriosam reprehenderit
+            est numquam amet ex nam, nihil suscipit saepe qui voluptatibus, animi quae totam odit. Beatae, corrupti
+            ipsum.
+        </p>
+        <p class="text-32 bg-steelblue text-white">
+            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Laudantium ad quod voluptatum illum facere
+            repellendus earum. Cumque, nihil eaque. Nostrum quibusdam officiis cum, dolore voluptatem numquam nemo
+            tenetur iste dignissimos?
+        </p>
+        <a href="index.html#temario-css">👆</a>
+    </article>
+
+    <hr>
+    <article id="selectores-avanzados">
+        <h2>Selectores Avanzados</h2>
+        <h3>Selectores de Hijos</h3>
+        <h4>Selector de Hijos Directos</h4>
+        <ul class="hijos-directos">
+            <!--<b>Hola</b>-->
+            <li><b>Primavera</b></li>
+            <li><b>Verano</b></li>
+            <li><b>Otoño</b></li>
+            <li><b>Invierno</b></li>
+        </ul>
+        <h4>Selector de Hijos Descendientes</h4>
+        <ul class="hijos-descendientes">
+            <li><b>Primavera</b></li>
+            <li><b>Verano</b></li>
+            <li><b>Otoño</b></li>
+            <li><b>Invierno</b></li>
+        </ul>
+        <a href="index.html#temario-css">👆</a>
+    </article>
+
+    <hr>
+    <article id="selectores-de-hermanos">
+        <h3>Selectores de Hermanos</h3>
+        <h4>Selector de Hermanos (en General)</h4>
+        <ul>
+            <li><b>Primavera</b></li>
+            <li class="hermanos-general"><b>Verano</b></li>
+            <li><b>Otoño</b></li>
+            <li><b>Invierno</b></li>
+        </ul>
+        <h4>Selector de Hermanos Adyacentes</h4>
+        <ul>
+            <li><b>Primavera</b></li>
+            <li class="hermanos-adyacentes"><b>Verano</b></li>
+            <li><b>Otoño</b></li>
+            <li><b>Invierno</b></li>
+        </ul>
+        <a href="index.html#temario-css">👆</a>
+    </article>
+
+    <hr>
+    <article id="selectores-de-atributos">
+        <h3>Selectores de Atributos</h3>
+        <nav class="selectores-atributos">
+            <ul>
+                <li><a href="https://www.jonmircha.com" target="_blank">Inicio</a></li>
+                <li><a class="menu-item cursos button" href="https://www.jonmircha.com/cursos"
+                        target="_blank">Cursos</a></li>
+                <li><a href="http://www.jonmircha.com/blog" target="_blank">Blog</a></li>
+                <li><a href="https://www.jonmircha.com/cv" target="_blank">CV</a></li>
+                <li><a class="menu item ahora button" href="https://www.jonmircha.com/ahora" target="_blank">Ahora</a>
+                </li>
+                <li><a class="menu-item notas button" href="http://www.jonmircha.com/notas" target="_blank">Notas</a>
+                </li>
+                <li><a href="index.html#temario-css">Regresar al Temario</a></li>
+            </ul>
+        </nav>
+        <a href="index.html#temario-css">👆</a>
+    </article>
+    <hr>
+    <article id="selector-universal">
+        <h3>Selector Universal (*)</h3>
+        <ul class="selector-universal">
+            <li><b>Primavera</b></li>
+            <li><b>Verano</b></li>
+            <li><b>Otoño</b></li>
+            <li><b>Invierno</b></li>
+        </ul>
+        <a href="index.html#temario-css">👆</a>
+    </article>
+    <hr>
+    <article id="pseudoclases">
+        <h3>Pseudoclases</h3>
+        <form class="form-pseudoclases">
+            <input type="text" name="nombre" placeholder="Escribe tu nombre" required><br>
+            <input type="email" name="correo" placeholder="Escribe tu correo" required><br>
+            <input type="submit">
+            <input type="submit" disabled><br>
+        </form>
+        <nav class="menu-pseudoclases">
+            <a href="#seccion1">Sección 1</a>
+            <a href="#seccion2">Sección 2</a>
+            <a href="#seccion3">Sección 3</a>
+            <a href="#seccion4">Sección 4</a>
+        </nav>
+        <p class="p-pseudoclases">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Nostrum, dolor veritatis! Qui commodi soluta vel
+            reiciendis autem beatae, dolorem voluptatum quam saepe, enim ipsum accusantium, illo ab cumque ea
+            cupiditate?
+        </p>
+        <ol class="lista-pseudoclases">
+            <li>Mú de Aries</li>
+            <li>Aldebarán de Tauro</li>
+            <li>Saga & Kanon de Géminis</li>
+            <li>Death Mask de Cáncer</li>
+            <li>Aioria de Leo</li>
+            <li>Shaka de Virgo</li>
+            <li>Dohko de Libra</li>
+            <li>Milo de Escorpion</li>
+            <li>Aioros de Sagitario</li>
+            <li>Shuca de Capricornio</li>
+            <li>Camus de Acuario</li>
+            <li>Afordita de Piscis</li>
+        </ol>
+        <article class="articulo-pseudoclases">
+            <header>Esto es un header</header>
+            <p>Esto es un p</p>
+            <div>Esto es una div</div>
+            <p>Esto es un p</p>
+            <section>Esto es una section</section>
+            <p>Esto es un p</p>
+            <div>Esto es una div</div>
+            <p>Esto es un p</p>
+            <footer>Esto es un footer</footer>
+        </article>
+        <a href=" index.html#temario-css">👆</a>
+    </article>
+    <hr>
+    <article id="pseudoelementos">
+        <h3>Pseudoelementos</h3>
+        <p>
+            <i>Bandai Myth Cloth Ex</i><span class="saga-geminis">Saga de Géminis</span> <span
+                class="saga-precio">500</span>
+        <p class="p-pseudoelementos">
+            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nostrum, voluptatum saepe. Quos, asperiores
+            libero, in veritatis consequuntur delectus id reprehenderit similique obcaecati eligendifacilis? Eligendi
+            minus itaque cumque ut inventore.</p>
+        </p>
+        <input class="input-pseudoelementos" type="text" name="nombre" placeholder="Escribe tu nombre">
+        <br>
+        <a href="index.html#temario-css">👆</a>
+    </article>
+    <hr>
+    <article id="form-agrupar-selectores">
+        <h3>Agrupar Selectores</h3>
+        <form class="form-agrupar-selectores">
+            <input type="text" name="nombre" placeholder="Escribe tu nombre">
+            <input type="email" name="correo" placeholder="Escribe tu correo">
+            <textarea name="comentarios" placeholder="Escribe tus comentarios" cols="30" rows="10"></textarea>
+            <input type="submit">
+        </form>
+        <a href="index.html#temario-css">👆</a>
+    </article>
+    <hr>
+    <article id="algoritmo-css">
+        <h3>Algoritmo de CSS</h3>
+        <ol>
+            <li>La Cáscada</li>
+            <li>La Especificidad</li>
+            <li>La Herencia</li>
+        </ol>
+        <blockquote id="cita-marco" class="cita-marco" style="background-color: rebeccapurple;">
+            Sé temerante con los demás y estricto contigo mismo - <cite>Marco Aurelio</cite>
+        </blockquote>
+        <a href="index.html#temario-css">👆</a>
+    </article>
+    <hr>
+    <article id="reset-normalize">
+        <h3>Reset / Normalize</h3>
+
+        <a href="index.html#temario-css">👆</a>
+    </article>
+    <hr>
+    <article id="prefijos">
+        <h3>Prefijos de los Navegadores</h3>
+        <ul>
+            <li>Navegadores de Microsoft <code><b>-ms-</b></code></li>
+            <li>Firefox <code><b>-moz-</b></code></li>
+            <li>Todos los demás navegadores <code><b>-webkit</b></code></li>
+        </ul>
+        <a href="index.html#temario-css">👆</a>
+    </article>
+    <hr>
+
+    <br><br><br>
+    <hr>
+    <article id="patron">
+        <h3>Patron</h3>
+
+        <a href="index.html#temario-css">👆</a>
+    </article>
+    <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+
+</body>
+
+</html>
